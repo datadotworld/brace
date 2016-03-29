@@ -77,7 +77,7 @@ color: #C900A4\
 color: #DF0002\
 }\
 .ace-dataworld .ace_comment {\
-color: #008E00\
+color: #839083\
 }\
 .ace-dataworld .ace_variable{\
 color: green\
