@@ -9,7 +9,7 @@ var SPARQLHighlightRules = function() {
     var keywords = "abs|add|all|as|asc|ask|avg|base|bind|bnode|bound|by|ceil|clear|coalesce|concat|construct|contains|copy|count|create|datatype|day|default|delete|desc|describe|distinct|drop|exists|filter|floor|from|graph|group|having|hours|if|in|insert|into|iri|isblank|isiri|isliteral|isnumeric|isuri|lang|langmatches|lcase|limit|load|max|md5|min|minus|minutes|month|move|named|not|now|offset|optional|order|prefix|rand|reduced|regex|replace|round|sameterm|sample|seconds|select|separator|service|sha1|sha256|sha384|sha512|silent|str|strafter|strbefore|strdt|strends|strlang|strlen|strstarts|struuid|substr|sum|timezone|to|tz|ucase|undef|union|uri|using|uuid|values|where|with|year"
     var keywordMapper = this.createKeywordMapper({
         "variable.language":
-           keywords.toUpperCase(),
+           keywords + "|" + keywords.toUpperCase(),
         "keyword":
           "",
         "constant.language":
@@ -17,7 +17,7 @@ var SPARQLHighlightRules = function() {
         "support.function":
           "",
         "constant.language.boolean": "true|false"
-    }, "identifier", true);
+    }, "identifier");
 
     var identifierRe = "[a-zA-Z\\$_\u00a1-\uffff][a-zA-Z\\d\\$_\u00a1-\uffff]*\\b";
 
