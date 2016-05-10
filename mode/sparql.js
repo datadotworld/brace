@@ -66,7 +66,7 @@ var SPARQLHighlightRules = function() {
             }],
             "#uris": [{
                 token: ["punctuation.sparql.keyword", "type.string.datatype.url.variable.sparql", "punctuation.sparql.keyword"],
-                regex : /\s?(<)(.*)(>)\s?/
+                regex : /(<)(\S*)(>)/
             }],
             "#logic-operators": [{
                 token: "keyword.operator.logical.sparql",
