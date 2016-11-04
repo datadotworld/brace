@@ -51,7 +51,7 @@ var SqlHighlightRules = function() {
             token : "string",           // ' string
             regex : "'.*?'"
         }, {
-            token : "string",           // ` string
+            token : "text",           // ` string
             regex : "`.*?`"
         }, {
             token : "constant.numeric", // float
