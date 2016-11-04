@@ -39,6 +39,9 @@ var SqlHighlightRules = function() {
             regex : "--.*$"
         },  {
             token : "comment",
+            regex : "#.*$"
+        },  {
+            token : "comment",
             start : "/\\*",
             end : "\\*/"
         }, {
@@ -47,6 +50,9 @@ var SqlHighlightRules = function() {
         }, {
             token : "string",           // ' string
             regex : "'.*?'"
+        }, {
+            token : "string",           // ` string
+            regex : "`.*?`"
         }, {
             token : "constant.numeric", // float
             regex : "[+-]?\\d+(?:(?:\\.\\d*)?(?:[eE][+-]?\\d+)?)?\\b"
