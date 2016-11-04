@@ -1,6 +1,6 @@
 {
   "name": "brace",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "browserify compatible version of the ace editor.",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "dependencies": {
     "w3c-blob": "0.0.1"
   },
- "publishConfig": {
+  "publishConfig": {
     "registry": "https://dataworld.artifactoryonline.com/dataworld/api/npm/npm-local"
   },
   "devDependencies": {
